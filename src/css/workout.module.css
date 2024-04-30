@@ -1,0 +1,193 @@
+.header {
+    background-color: #333; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 20px; /* Отступы внутри header */
+    width: 100%; /* Ширина header по всей ширине экрана */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень под header */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Размер логотипа */
+    height: 40px; /* Размер логотипа */
+    margin-right: 10px; /* Отступ между логотипом и текстом */
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar li {
+    margin: 0 15px; /* Отступы между пунктами меню */
+}
+
+.menu-bar li a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #fff; /* Цвет текста */
+    font-weight: bold; /* Жирный текст */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.menu-bar li a:hover {
+    color: #ff7f50; /* Цвет текста при наведении */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+/* Стили для workout-container */
+.workout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.workout-container .category {
+    margin-bottom: 30px;
+}
+
+.workout-container .category h2 {
+    color: #ff7300;
+    text-align: center;
+}
+
+.workout-container .workout-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.workout-container .workout-item {
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: calc(20% - 10px); /* Изменение ширины элемента и учет отступов */
+}
+
+.workout-container .workout-item:hover {
+    transform: scale(1.05);
+}
+
+.workout-container .workout-item img {
+    width: 100%;
+    height: auto; /* Убрать фиксированную высоту */
+}
+
+.workout-container .workout-item h3 {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Стили для модального окна */
+.workout-container .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Добавляем возможность прокрутки */
+}
+
+.workout-container .modal-content {
+    margin-top: 200px; /* Верхнее смещение модального окна */
+    margin-bottom: 50px; /* Убираем нижний отступ */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 40%; /* Максимальная ширина модального окна */
+    text-align: center; /* Выравнивание текста по центру */
+    position: relative; /* Добавляем относительное позиционирование для кнопки закрытия */
+}
+
+.workout-container .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.workout-container .close:hover {
+    color: red;
+}
+
+.workout-container .modal-content img {
+    max-width: 80%; /* Устанавливаем максимальную ширину для изображения */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.workout-container .modal-content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff8c00;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.workout-container .modal-content button:hover {
+    background-color: #ff6347;
+}
+
+
+/* Виджеты */
+
+.widgets {
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding: 10px;
+}
+
+.widget:hover {
+    transform:translateY(10px); /* Подъем виджета при наведении */
+    border: 4px solid #ff8c00; /* Зеленая рамка при наведении */
+    border-radius: 15px; /* Закругление углов рамки */
+}
+
+.widget img {
+    padding: 5px;
+    width: 100px;
+    height: auto;
+    border-radius: 15px; /* Закругление углов для изображения */
+    margin-bottom: 10px;
+}
+
+.widget p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold; /* Жирный текст */
+    color: #333; /* Цвет текста */
+}

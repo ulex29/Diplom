@@ -1,0 +1,65 @@
+/* Подключение шрифта Roboto и Cormorant Garamond */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* Общие стили */
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0; /* Цвет фона страницы */
+  }
+  
+  /* Стили для header */
+  header {
+    background-color: #333; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 20px; /* Отступы внутри header */
+    width: 100%; /* Ширина header по всей ширине экрана */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень под header */
+  }
+  
+  /* Стили для логотипа */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px; /* Размер логотипа */
+    height: 40px; /* Размер логотипа */
+    margin-right: 10px; /* Отступ между логотипом и текстом */
+  }
+  
+  /* Стили для навигационного меню */
+  .menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-bar li {
+    margin: 0 15px; /* Отступы между пунктами меню */
+  }
+  
+  .menu-bar li a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #fff; /* Цвет текста */
+    font-weight: bold; /* Жирный текст */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+  }
+  
+  .menu-bar li a:hover {
+    color: #ff7f50; /* Цвет текста при наведении */
+  }
+  
+  h1 {
+    font-family: 'Roboto', sans-serif;
+  }
+  

@@ -1,0 +1,77 @@
+.login-container {
+    display: flex;
+    flex-direction: column; /* Выравнивание элементов по вертикали */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #222;
+  }
+  
+  .login-form {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login-form h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .login-form input {
+    width: calc(100% - 20px); /* Subtract padding from width */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #ff8c00;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .login-form button:hover {
+    background-color: #ffcd38;
+    color: #fff;
+  }
+  
+  .login-form .error {
+    color: #fff;
+    background-color: #ff6347;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .register-link {
+    margin-top: 20px; /* Добавление отступа сверху */
+    color: #fff;
+  }
+  
+  .register-link a {
+    color: #ff8c00; /* Цвет ссылки */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline; /* Подчеркивание ссылки при наведении */
+  }
+  
